@@ -1,0 +1,121 @@
+body {
+    background:  rgba(4, 4, 4, 0.915);
+    margin: 0px;
+    overflow: hidden;
+}
+#div {
+    position: relative;
+    left: 150px;
+    top: 20px;
+    display: flex;
+    gap: 30px;
+}
+#div2 {
+    position: relative;
+    left: 800px;
+    background:  rgb(9, 9, 205);
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    
+}
+#div2:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(9, 9, 205);
+}
+#reg {
+    margin: 10px;
+    position: relative;
+    top:5px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+.lab {
+    
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+
+}
+.lab:hover {
+    border-bottom: 1px solid white;
+    transform: scale(1.05);
+    transition: 0.4s;
+    text-shadow: 0 0 15px  rgb(217, 220, 217)
+                0   0 30px rgb(202, 188, 188);
+}
+#main{
+    position: relative;
+    top: 200px;
+    left: 160px;
+    color: rgba(222, 222, 233, 0.97);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25pt;
+
+}
+#color {
+    color: rgb(9, 213, 9);
+}
+#photo {
+    width: 1200px;
+    height: 800px;
+    position: relative;
+    left: 190px;
+    
+    overflow: hidden;
+    filter:drop-shadow(0 0 1px white);
+}
+#div3 {
+    position: relative;
+    left:40%;
+    top:200px;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(19, 151, 195, 0.764);
+    border-radius: 6px;
+    
+}
+#main2 {
+    position: relative;
+    left: 100px;
+    border-bottom: 1px solid black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+.word {
+    position: relative;
+    left: 20px;
+    top:20px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+.info {
+    position: relative;
+    left: 20px;
+    top:20px;
+    width: 170px;
+    height: 15px;
+    border-radius: 6px;
+}
+.reg {
+    color: white;
+    position: relative;
+    left: 20px;
+    top:20px;
+    background:  rgba(9, 15, 183, 0.912);
+    margin: 30px;
+    width: 140px;
+    border-radius: 6px;
+
+}
+.reg:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 10px blue;
+}
+
