@@ -1,0 +1,83 @@
+body {
+    background-image: url(backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+#gradient {
+    background-color:  rgba(5, 10, 5, 0.615);
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+#head {
+    position: relative;
+    left:80%;
+}
+#start {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 35pt;
+}
+#near {
+    color:transparent;
+    -webkit-text-stroke: 1px brown;
+}
+#main {
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+    display: flex;
+}
+.mean {
+    color:white;
+    font-size: 18pt;
+    margin:15px;
+}
+.mean:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    border-bottom: 2px solid blue;
+    text-shadow: 0 0 15px  blue
+                0 0 30px blue;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+}
+.slide img {
+     position: relative;
+    left: 450px;
+    bottom: 150px;
+    width: 600px;
+    height: auto;
+    display: block;
+}
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    font-size:24px;
+    padding:10px 15px;
+    cursor:pointer;
+}
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
