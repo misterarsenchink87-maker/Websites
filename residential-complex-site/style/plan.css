@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    background: linear-gradient(to top, rgb(11, 11, 11),rgb(68, 113, 115));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+#head {
+    text-align: center;
+}
+#main {
+    color:color-mix(in srgb, rgb(25, 193, 190), white 50%);
+    font-size: 30pt;
+}
+#center {
+    background: rgb(16, 17, 16);
+    width: 1800px;
+    height: 60px;
+}
+#div {
+    position: relative;
+    left: 400px;
+    display: flex;
+    gap:30px;
+    color:white;
+}
+.lab_other {
+    position: relative;
+    top:15px;
+    font-size: 15pt;
+}
+.lab_other:hover {
+    border-bottom: 1px solid grey;
+    transform: scale(1.05);
+    transition: 0.3s;
+    animation: lab 3ms forwards;
+}
+@keyframes lab {
+    to {
+        color:rgba(21, 90, 219, 0.837);
+    }
+    
+}
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+}
+.slide img {
+     position: relative;
+    left: 200px;
+    top:100px;
+    width: 600px;
+    height: auto;
+    display: block;
+}
+#div1 {
+    position: relative;
+    left: 1000px;
+    bottom: 1000px;
+    color: white;
+
+}
+#lab {
+    position: relative;
+    top:10px;
+    font-size: 20pt;
+}
+#img {
+    position: relative;
+    top:450px;
+    right: 200px;
+    width: 300px;
+    height: auto;
+}
+.lab1 {
+    position: relative;
+    top:500px;
+    right: 550px;
+    font-size: 15pt;
+}
+.lab {
+    position: relative;
+    top:500px;
+    right: 500px;
+    margin-left: 500px;
+    font-size: 15pt;
+}
+
+#div2 {
+    position: relative;
+    bottom: 1000px;
+    color:white;
+}
+#img2 {
+    position: relative;
+    right: 50px;
+    top:370px;
+    width: 200px;
+    height: auto;
+}
+#lab2 {
+    position: relative;
+    top:100px;
+    left: 30px;
+    font-size: 20pt;
+}
+.lab_main {
+    position: relative;
+    right: 240px;
+    top:500px;
+    font-size: 15pt;
+}
+.lab2 {
+    position: relative;
+    left: 200px;
+    top:500px;
+    font-size: 15pt;
+}
+.h1 {
+    position: relative;
+    top:300px;
+    left: 30px;
+}
+.slider2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slides2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide2 {
+    min-width: 100%;
+}
+.slide2 img {
+     position: relative;
+    left: 800px;
+    top:400px;
+    width: 600px;
+    height: auto;
+    display: block;
+}
