@@ -1,0 +1,289 @@
+body {
+    margin:0;
+    overflow-x: hidden;
+    background-image: url("img/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white
+
+}
+body::before {
+    content: "";
+  position: fixed;
+  left: 85%;
+  top: 10%;
+  transform: translateY(-50%);
+
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+   
+  border: 40px solid rgba(255, 0, 0, 0.5);
+  background: transparent;
+  pointer-events: none;
+}
+#block_fon {
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.542);
+}
+
+header h1 {
+  position: relative;
+  left: 100px;
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+  opacity: 0;
+  
+}
+header img {
+  position: relative;
+  top:55px;
+  left: 40px;
+  width: 30px;
+  height: auto;
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+  opacity: 0;
+}
+header nav {
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(50px) ;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+.block {
+  display: flex;
+  gap:30px;
+  position: relative;
+  left: 600px;
+  bottom: 50px;
+  font-size: 15pt;
+}
+.block a:hover {
+  border-bottom: 1px solid black;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.button {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.num {
+  position: relative;
+  left: 88%;
+  bottom: 50px;
+  font-size: 15pt;
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+  opacity: 0;
+}
+#block2 {
+  text-align: center;
+  display: block;
+  gap:20px;
+  font-size: 15pt;
+}
+#block2 label {
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+}
+#block2 h1 {
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+  animation-delay: 0.3s;
+  opacity: 0;
+
+}
+#block2 p {
+  animation: fade 1s ease forwards;
+  transition: 0.3s;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+#block_button {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top:40px;
+  display: flex;
+  gap:40px;
+}
+.button1 {
+  width: 200px;
+  height: 50px;
+  background: rgba(223, 3, 3, 0.914);
+ text-align: center;
+ animation: fade 0.3s ease forwards;
+ transition: 0.3s;
+ opacity: 0;
+ border-radius: 8pt;
+}
+.button1:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(223, 3, 3, 0.914) ;
+}
+.button1 label {
+  position: relative;
+  top:20px;
+}
+.button2 {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background: rgb(239, 237, 237);
+  animation: fade 0.3s ease forwards;
+ transition: 0.3s;
+ opacity: 0;
+ border-radius: 8pt;
+
+}
+.button2:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgb(239, 237, 237);
+}
+
+.button2 label {
+  position: relative;
+  top:20px;
+  color:black;
+}
+
+.main {
+  position: relative;
+  top:100px;
+  background-color: rgb(239, 237, 237);
+  
+}
+.info {
+  position: relative;
+  top:20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap:30px;
+
+}
+.info div {
+    height: 170px;
+    border-radius: 8pt;
+  background: rgb(21, 21, 21);
+}
+.another1 {
+  animation: fade 1s ease forwards;
+  animation-delay: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.another2 {
+  animation: fade 2s ease forwards;
+  animation-delay: 0.6s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.another3 {
+  animation: fade 3s ease forwards;
+  animation-delay: 0.8s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.another4 {
+  animation: fade 3s ease forwards;
+  animation-delay: 0.10s;
+  transition: 0.3s;
+  opacity: 0;
+}
+.info img {
+  width: 40px;
+  height: auto;
+  margin-top: 5px;
+  justify-content: center;
+}
+#other_b {
+  position: relative;
+  top:20px;
+  text-align: center;
+  color:black;
+
+}
+.main_2 {
+  position: relative;
+  top:30px;
+  text-align: center;
+  color:black;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,150px);
+  gap:50px;
+}
+.main_2 div {
+  border-radius: 8pt;
+  height: 230px;
+  background-color: rgba(253, 5, 5, 0.252);
+}
+.main_2 img {
+  width: 50px;
+  height: auto;
+  justify-content: center;
+}
+.other_div {
+  position: relative;
+  top:50px;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x:hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  body::before {
+    border-radius: 50%;
+    width: 100%;
+  }
+  #block_fon {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+  }
+  .num {
+    position: relative;
+    right: 100px;
+    width: 100%;
+  }
+  .block  {
+   text-align: center;
+    flex-direction: column;
+    display: none;
+    width: 200px;
+    
+
+  }
+  .block.active {
+    display: flex;
+  }
+  .button {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    
+  }
+}
