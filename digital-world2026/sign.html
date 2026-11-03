@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background: linear-gradient(135deg,
+            #000000 0%,
+            #00110a 25%,
+            #003b5c 55%,
+            #00ff9d 75%,
+            #000000 100%
+        
+);
+             background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            color:white;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        body.fage-out {
+            opacity: 0;
+        }
+         .block2 {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .menu {
+            display: flex;
+            gap:20px;
+             align-items: right;
+            justify-content: right;
+            font-size: 15pt;
+            z-index: 1001;
+        }
+        .block2 p {
+            font-size: 15pt;
+
+        }
+        .block2 p:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+            border-bottom: 1px solid black;
+        }
+        .block p {
+            font-size: 15pt;
+
+        }
+        .conteiner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .burger {
+            display: none;
+            width: 30px;
+            height: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            z-index: 1001;
+
+        }
+        .overlay {
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.673);
+            opacity: 0;
+            pointer-events: none;
+            display: none;
+            transition: 0.3s ;
+            z-index: 1000;
+        }
+        .overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .sign {
+            width: 400px;
+            height: 500px;
+            border-radius: 8pt;
+            background-color: rgba(0, 0, 0, 0.596);
+            color:white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .input {
+            width: 300px;
+            height: 30px;
+            border-radius: 8pt;
+        }
+        .submit {
+            position: relative;
+            top:20px;
+            width: 150px;
+            height: 30px;
+            border-radius: 8pt;
+            background-color: #003b5c;
+            color:white;
+        }
+        .bth {
+            background: #003b5c;
+            border-radius: 8pt;
+        }
+        
+        @media (max-width:768px) {
+            
+            .conteiner {
+                width: 100%;
+                padding: 0 20px;
+                font-size: 13pt;
+            }
+            .burger {
+                display: flex;
+            }
+            .menu {
+                position: fixed;
+                top:0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                flex-direction: column;
+                padding: 80px 20px;
+                gap:20px;
+                transition: 0.3s;
+            }
+            .menu.active {
+                right: 0;
+            }
+            .overlay {
+                display: block;
+            }
+            .overlay.active {
+            opacity: 1;
+            pointer-events: all;
+            }
+        }
+         @media (max-width:480px) {
+            .conteiner {
+                padding: 0 10px;
+            }
+             .burger {
+                display: flex;
+            }
+            .menu {
+                position: fixed;
+                top:0;
+                transform: translateX(100%);
+                transition: transform 0.4s ease;
+                width: 70%;
+                height: 100vh;
+                background: black;
+                flex-direction: column;
+                padding: 60px 20px;
+                gap:20px;
+                transition: 0.3s;
+            }
+            .menu.active {
+                transform: translateX(0);
+            }
+            .overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="block2 conteiner" >
+            <div class="menu" id="menu">
+            <p id="bth1">HOME</p>
+            <p>NEWS</p>
+            <p>AMBASSADORS</p>
+            <p>TOOLS</p>
+            <p>EDUCATION</p>
+            <P>COMMUNITY</P>
+            <P>FOR PARTNERS</P>
+            <P>FOR MEMBERS</P>
+            </div>
+            <div class="burger" id="burger">Menu</div>
+            <div class="overlay" id="overlay"></div>
+    </header>
+    <div class="sign conteiner">
+        <div>
+            <h2>Sign up</h2>
+        </div>
+        <div class="block">
+            <p>Your name:</p>
+            <input id="name" class="input">
+        </div>
+        <div class="block">
+            <p>Your login:</p>
+            <input id="login" class="input">
+        </div>
+        <div class="block">
+            <p>Your password:</p>
+            <input type="password" id="password" class="input" placeholder="password" required minlength="6">
+            <button onclick="togglePassword()" class="bth">👁</button>
+        </div>
+        <div class="block">
+            <p>Your email:</p>
+            <input type="email" id="email" class="input"  required>
+        </div>
+        <input type="submit" id="submit"  class="submit" value="Sign Up">
+    </div>
+    <script>
+         document.getElementById("bth1").addEventListener("click", () => {
+            document.body.classList.add("fade-out")
+            setTimeout(() => {
+                window.location.href = "index.html"
+            },500)
+        })
+         document.getElementById("submit").addEventListener("click", async() => {
+            setTimeout(() => {
+                window.location.href = "index.html"
+            },500)
+            const nameUse = document.getElementById("name").value;
+            localStorage.setItem("username", nameUse)
+        })
+         const burger = document.getElementById("burger")
+        const menu = document.getElementById("menu")
+        const overlay = document.getElementById("overlay")
+        burger.addEventListener("click" , () => {
+            burger.classList.toggle("active")
+            menu.classList.toggle("active")
+            overlay.classList.toggle("active")
+        })
+        function togglePassword() {
+            const input = document.getElementById("password")
+            if(input.type === "password") {
+                input.type = "text"
+            }
+            else {
+                input.type = "password"
+            }
+        }
+        const nameUser = name.value;
+        const emailUser = email.value;
+        
+            const res = await fetch("http://127.0.0.1:8000/sign", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    username: nameUser,
+                    email: emailUser
+                })
+           
+            console.log("STATUS:" ,res.status)
+            const data = await res.json();
+            console.log("DATA:", data)
+        
+        catch (err) {
+            console.error("ERROR:", err)
+
+        }
+       
+        //let name = document.querySelector("#name")
+        //let login = document.querySelector("#login")
+        //let password = document.querySelector("#password")
+        //let email = document.querySelector("#email")
+        //let submit = document.querySelector("#submit")
+
+        
+       // let users = {};
+       // function Users(name,login,password,email) {
+        //    this.name = name
+         //   this.login = login
+         //   this.password = password
+          //  this.email = email
+       // }
+        //function createId(users) {
+         //   return Object.keys(users).length;
+       // }
+      
+    </script>
+</body>
+</html>

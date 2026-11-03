@@ -1,0 +1,90 @@
+body {
+    background-image: url(backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+#main {
+    background-color:  rgba(5, 10, 5, 0.615);
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+#head {
+    position: relative;
+    left:80%;
+}
+#start {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 35pt;
+}
+#near {
+    color:transparent;
+    -webkit-text-stroke: 1px brown;
+}
+#content {
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+    display: flex;
+}
+.mean {
+    color:white;
+    font-size: 20pt;
+    margin:15px;
+}
+.mean:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    border-bottom: 2px solid blue;
+    text-shadow: 0 0 15px  blue
+                0 0 30px blue;
+}
+#reg {
+    background-color:brown;
+    position: relative;
+    left: 40%;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+#fie {
+    border: none;
+}
+#regist {
+    color:white;
+    text-align: center;
+    font-size: 20pt;
+}
+.lab {
+    color:white;
+    font-size: 20pt;
+}
+.inp {
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+}
+.inp:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 10px white;
+}
+.sub {
+    position: relative;
+    left: 150px;
+    top: 30px;
+    width: 150px;
+    height: 30px;
+    background-color:rgba(39, 6, 223, 0.873);
+    border-radius: 10px;
+    color:white;
+}
+.sub:hover {
+    transform: skew(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(39, 6, 223, 0.873);
+}

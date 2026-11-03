@@ -1,0 +1,74 @@
+body {
+    background-image: url(backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+#gradient {
+    background-color:  rgba(5, 10, 5, 0.615);
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+header {
+    position: relative;
+    left: 600px;
+    top:200px;
+}
+#start {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 50pt;
+}
+#near {
+    color:transparent;
+    -webkit-text-stroke: 1px brown;
+}
+.head {
+    position: relative;
+    left: 90px;
+    color:white;
+    font-size: 19pt;
+}
+#main {
+    position: relative;
+    left: 100px;
+    bottom:200px;
+    display: flex;
+}
+.menu {
+    color:white;
+    font-size: 18pt;
+    margin:15px;
+}
+.menu:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    border-bottom: 2px solid blue;
+    text-shadow: 0 0 15px  blue
+                0 0 30px blue;
+}
+#reg {
+    position: relative;
+    left: 700px;
+    top: 230px;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+#regist {
+    position: relative;
+    left: 17px;
+    top:5px;
+    color:transparent;
+    -webkit-text-stroke: 1px blue;
+    font-size: 20pt;
+}
+#reg:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 10px white;
+}

@@ -1,0 +1,112 @@
+body {
+     background-color: black;
+    margin: 0px;
+    overflow: hidden;
+}
+.div {
+    background-color: rgb(28, 28, 221);
+    width: 55vw;
+    height: 50vw;
+}
+#h1 {
+    position: relative;
+    top: 20px;
+    left:80px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    margin: 0px;
+}
+#choose {
+    position: relative;
+    left: 300px;
+    bottom: 20px;
+    display: flex;
+    gap: 25px;
+}
+.inform {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+.inform:hover {
+    border-bottom: 1px solid black;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.info {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+.info:hover {
+    border-bottom: 1px solid black;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#div {
+    position: relative;
+    left: 45vw;
+    top:100px;
+    width: 400px;
+    height: 500px;
+    background-color:  rgb(5, 136, 229);
+    border-radius: 15px;
+    border-left: 4px solid black;
+    border-right: 4px solid white;
+    
+}  
+#main {
+    position: relative;
+    left: 120px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    
+}
+.mean {
+    position: relative;
+    left: 70px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+
+}
+.line {
+    position: relative;
+    left: 40px;
+    border-radius: 15px;
+    width: 250px;
+    height: 30px;
+}
+
+#check {
+    position: relative;
+    left: 40px;
+    width: 50px;
+    height: 20px;
+}
+#remem {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+}
+#reg {
+    position: relative;
+    left: 50px;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(28, 28, 221);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    border-radius: 15px;
+}
+#reg:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+}

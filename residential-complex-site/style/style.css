@@ -1,0 +1,118 @@
+body {
+    overflow: hidden ;
+    margin: 0px;
+    background: linear-gradient(to top, rgb(11, 11, 11),rgb(68, 113, 115));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head {
+    text-align: center;
+}
+#intro {
+    color:color-mix(in srgb, rgb(25, 193, 190), white 50%);
+    font-size: 30pt;
+}
+#center {
+     background: rgb(16, 17, 16);
+    width: 1800px;
+    height: 60px;
+}
+#div {
+    position: relative;
+    left: 400px;
+    display: flex;
+    gap:30px;
+    color:white;
+}
+.lab {
+    position: relative;
+    top:15px;
+    font-size: 15pt;
+}
+.lab:hover {
+    border-bottom: 1px solid grey;
+    transform: scale(1.05);
+    transition: 0.3s;
+    animation: lab 3ms ease-in-out;
+}
+@keyframes lab {
+    to {
+        color:rgb(19, 61, 139);
+    }
+}
+
+#fon {
+    background-image: url(bulid.jpg);
+    background-size: 100%;
+    height: 700px;
+    
+}
+#div2 {
+    position: relative;
+    left: 400px;
+    top:150px;
+    color:rgb(18, 194, 197);
+    font-size: 15pt;
+   
+}
+#content {
+    background: rgba(11, 11, 11, 0.447);
+    width: 100%;
+    height: 100%;
+}
+#h1 {
+    font-size: 35pt;
+}
+#div3 {
+    background-color: rgb(10, 74, 126);
+    width: 300px;
+    height: 50px;
+    border-radius: 6pt;
+}
+#lab1 {
+    color:white;
+    position: relative;
+    top:10px;
+    left: 40px;
+
+}
+
+/*about.html*/
+#about {
+    color:color-mix(in srgb, rgb(25, 193, 190), white 75%);
+    font-size: 30pt;
+}
+
+#img {
+    width: 400px;
+    height: auto;
+}
+#parent {
+    position: relative;
+    bottom: 500px;
+    left: 500px;
+    display: block;
+    color:white;
+}
+#block {
+    position: relative;
+    bottom: 800px;
+    left: 1000px;
+    color:white;
+}
+#block2 {
+    position: relative;
+    top:100px;
+    background-color: rgb(10, 74, 126);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 6pt;
+}
+#quess {
+    position: relative;
+    top:10px;
+    font-size: 20pt;
+    
+}

@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+    margin: 0px;
+    overflow: hidden;
+}
+.div {
+    background-color: rgb(28, 28, 221);
+    width: 55vw;
+    height: 50vw;
+    
+}
+#h1 {
+    position: relative;
+    top: 20px;
+    left:80px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    margin: 0px;
+}
+#div {
+    position: relative;
+    left: 50vw;
+    top:100px;
+    display: block;
+
+}
+#choose {
+    position: relative;
+    left: 300px;
+    bottom: 20px;
+    display: flex;
+    gap: 25px;
+}
+.inform {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+.inform:hover {
+    border-bottom: 1px solid black;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#parent {
+    position: relative;
+    left: 800px;
+    width: 140px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+#parent:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border:1px solid blue;
+}
+#reg {
+    position: relative;
+    left: 20px;
+    top:5px;
+    margin: 10px;
+    color:rgb(19, 19, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+.lab {
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+
+}
+#lab2 {
+    position: relative;
+    right: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+#speciaty {
+    position: relative;
+    right: 300px;
+    bottom: 20px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80pt;
+}
+#color {
+    color:transparent;
+    -webkit-text-stroke: 3px white;
+}
+#parent2 {
+    position: relative;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+
+}
+#parent2:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border:1px solid white;
+    box-shadow: 0 0 10px white;
+}
+#lab3 {
+    position: relative;
+    top:8px;
+    margin: 25px;
+    color: rgb(19, 19, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17pt;
+
+}
