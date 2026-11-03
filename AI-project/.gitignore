@@ -1,0 +1,19 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# JavaScript
+node_modules/
+dist/
+
+# IDE settings
+.idea/
+.vscode/
